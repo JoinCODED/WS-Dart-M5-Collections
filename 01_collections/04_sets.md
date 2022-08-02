@@ -1,19 +1,17 @@
-Sets are also a collection type, but there's a fundamental difference between them.
+`Set` is also a collection type, but there is a fundamental difference between it and `List`.
 
-Sets are collections of **unique** values, but lists can contain **duplicate** values.
+`Sets` are collections of **unique** values, but lists can contain **duplicate** values.
 
-So how can we declare a set in dart:
+We declare a `Set` in Dart as follows:
 
 ```dart
 void main () {
 var countries = ['Kuwait','Oman','Egypt']; // this is a list
-var food = {'burger','pizza','pasta'}; // this is a set!
+var food = {'burger','pizza','pasta'}; // this is a `Set`!
 }
 ```
 
-The only difference in declaration is that we use curly braces instead of square brackets.
-
-And because we don't use square brackets for declaration, we can't also use square brackets to access an item with a given index:
+The only difference in the declaration is that we use curly braces around the `Set`'s values instead of square brackets. And because of that, we can't use square brackets as well to access an item with a given index:
 
 ```dart
 void main () {
@@ -22,7 +20,7 @@ print(food[1]); // this will throw an error
 }
 ```
 
-Instead, we use `.elementAt()` method:
+Instead, we use the `.elementAt()` method:
 
 ```dart
 void main () {
@@ -37,7 +35,7 @@ Output:
 pizza
 ```
 
-We can also use the same `add()` method we used with lists:
+Though not all of the `Lists` methods are applicable on `Sets`, some, like `.first`, `.last`, `.length`, and `.add()` are applicable:
 
 ```dart
 void main () {
@@ -50,12 +48,12 @@ print(food);
 Output:
 
 ```
-burger, pizza, pasta
+{burger, pizza, pasta}
 ```
 
-Shouldn't we get 2 pastas?, As we said, sets includes only unique values, so it will automatically remove any duplicate element.
+In the output above, shouldn't we get two pastas? As we said, `Sets` include unique values, so it will automatically remove any duplicate elements.
 
-To remove an element from a set, we use the `remove()` method:
+Finally, to remove an element from a `Set`, we use the `.remove()` method:
 
 ```dart
 void main () {
@@ -68,7 +66,5 @@ print(food);
 Output:
 
 ```
-burger, pizza
+{burger, pizza}
 ```
-
-And we can also use `first`, `last` and `length` on sets.

@@ -1,4 +1,7 @@
-We learned about operations that can be done on both sets and lists, but we have some unique methods that only works with sets:
+We learned about operations that can be done on both `Sets` and `Lists`. However, there are some unique methods that only work with `Sets`.
+
+
+Assume that we have the two `Sets` below:
 
 ```dart
 void main() {
@@ -7,7 +10,7 @@ void main() {
 }
 ```
 
-Our first method is `union()` which combines 2 sets and removes duplicates:
+Our first method is `.union()`, which combines two `Sets` and removes duplicates:
 
 ```dart
 void main() {
@@ -20,10 +23,10 @@ void main() {
 Output:
 
 ```
-vegetables, fruit, seeds, eggs, milk
+{vegetables, fruit, seeds, eggs, milk}    
 ```
 
-Next, we have the `intersection()` method, that generate a set with only the items that are in both sets:
+Next, we have the `.intersection()` method, which generates a `Set` with only the items that are in both `Sets`:
 
 ```dart
 void main() {
@@ -36,11 +39,11 @@ void main() {
 Output:
 
 ```
-vegetables
+{vegetables}
 ```
 
-Lastly, we have the `difference()` method, which generates a set with the items that is in the first set, but not in the second:
-
+Lastly, we have the `.difference()` method, which generates a `Set` with the items that are in the first `Set`, but not in the second:
+                                            
 ```dart
 void main() {
     var veganFood = {'vegetables','fruit','seeds'};
@@ -52,5 +55,5 @@ void main() {
 Output:
 
 ```
-fruit, seeds
+{fruit, seeds}
 ```
