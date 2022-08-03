@@ -1,10 +1,12 @@
+So far, we declared our list with the `var` keyword:
+
 ```dart
 void main () {
 var countries = ['Kuwait','Oman','Egypt'];
 }
 ```
 
-So far, we declared our list with the `var` keyword, and we can write the type explicitly like we did with variables:
+And we can set the type explicitly as we did with variables:
 
 ```dart
 void main () {
@@ -12,7 +14,7 @@ List countries = ['Kuwait','Oman','Egypt'];
 }
 ```
 
-Above, we declared the type of `countries` as a `List`, but we can be more specific with the type of the items withing this `List`:
+Above, we declared the type of `countries` as a `List`. Besides, we can be more specific with the type of items within this `List`:
 
 ```dart
 void main () {
@@ -20,9 +22,9 @@ List<String> countries = ['Kuwait','Oman','Egypt'];
 }
 ```
 
-We can add angular brackets after `List` and within them, we tell dart what type of elements is allowed in this list of items.
+We can add angular brackets after `List`, and between them, we tell Dart the type of elements allowed in this list.
 
-Also, we can use `final` and `const` in our list declaration, but it behaves a bit different.. let's see what I mean:
+Furthermore, we can use `final` or `const` in our list declaration, but they behave a bit different.. let's see what this means:
 
 ```dart
 void main () {
@@ -31,7 +33,7 @@ countries = ['UAE'];
 }
 ```
 
-As you see, dart is complaining that we can't `re-assign` a `final`. but it may surprise you that:
+As you see, Dart is complaining that we cannot `re-assign` a `final`. Yet, you may be surprised that you can still `modify` the content of a final list:
 
 ```dart
 void main () {
@@ -40,6 +42,4 @@ countries[2] = 'UAE';
 }
 ```
 
-You can still `modify` the content of a final list but you can't `re-assign` it.
-
-But for `const`, you can't `re-assign` nor `modify` the list.
+However, for `const`, you cannot `re-assign` nor `modify` the list.

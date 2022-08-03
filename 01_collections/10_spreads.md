@@ -1,4 +1,4 @@
-If we have the following code:
+Assume that we have the following code:
 
 ```dart
 void main () {
@@ -7,7 +7,7 @@ void main () {
 }
 ```
 
-Let's try to combine those two lists into one list:
+Let's try combining the two lists above into one list:
 
 ```dart
 void main () {
@@ -23,7 +23,9 @@ Output:
 ['friday','saturday',['sunday','monday','tuesday']]
 ```
 
-But what if we wan't the elements of the first list to be included in the second list as items not as a nested list, we can use the `spread` operator (...) to spread those elements into our second list:
+What if we want the elements of the first list to be included in the second list as items, not as a nested list?
+
+Here, the `spread` operator (...) comes to help us to spread those elements into our second list:
 
 ```dart
 void main () {
